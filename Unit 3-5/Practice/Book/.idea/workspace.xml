@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f968e8cd-6aa6-49a4-8224-2f062b970008" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/E01_HigherLowerDivision.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E02_GetHigherThanThree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E03_Dates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E04_AdditionIntegers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E05_LessThanTen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E06_CountPositives.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E07_Factorial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E08_ShowEvenNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E09_CheckPassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E10_AverageGrade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E11_AverageAdditionNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E12_MultiplicationTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E13_GuessNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E14_ShowGrades.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E15_PrimeNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/E16_Paycheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/E17_EvenOdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/E18_MultiplesThree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/E19_HigherLower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/E20_EvenOddRange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/E21_SecondsHours.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/E22_CalculateSalary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/E23_PlusDigits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Book/E15_PrimeNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Book/E15_PrimeNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/E15_PrimeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/E15_PrimeNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +38,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

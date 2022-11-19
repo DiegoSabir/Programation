@@ -3,8 +3,8 @@
  */
 public class E15_PrimeNumber {
     public static void showPrimeNumbers(){
-        boolean prime = true;
         for(int i = 1; i <= 100; i++){
+            boolean prime = true;
             int counter = 0;
             for(int j = 1; j <= i; j++){
                 if (i % j == 0){
