@@ -2,17 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f968e8cd-6aa6-49a4-8224-2f062b970008" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/E16_Paycheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E17_EvenOdd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E18_MultiplesThree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E19_HigherLower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E20_EvenOddRange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E21_SecondsHours.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E22_CalculateSalary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/E23_PlusDigits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FirstExerciseBulletin/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FirstExerciseBulletin/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FirstExerciseBulletin/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FirstExerciseBulletin/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FirstExerciseBulletin/FirstExerciseBulletin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FirstExerciseBulletin/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SecondExerciseBulletin/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SecondExerciseBulletin/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SecondExerciseBulletin/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SecondExerciseBulletin/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SecondExerciseBulletin/SecondExerciseBulletin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SecondExerciseBulletin/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Unit 8/ArrayExercises/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Unit 8/ArrayExercises/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Unit 8/ArrayExercises/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Unit 8/ArrayExercises/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Unit 8/ArrayExercises/ArrayExercises.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Unit 8/ArrayExercises/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Book/E15_PrimeNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Book/E15_PrimeNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/E15_PrimeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/E15_PrimeNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/E20_EvenOddRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/E20_EvenOddRange.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +47,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
