@@ -18,6 +18,7 @@ public class E02_ArrayPrimeNumbers {
         int[] list = arrayRandomNumbers();
         for (int i = 0; i < list.length; i++){
 
+
             for(i = 1; i <= 100; i++){
                 boolean prime = true;
                 int counter = 0;
@@ -30,7 +31,6 @@ public class E02_ArrayPrimeNumbers {
                     }
                 }
                 if (prime == true){
-                     array2[i] = ;
                 }
             }
         }
