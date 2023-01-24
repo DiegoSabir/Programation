@@ -13,6 +13,8 @@
  *
  * En el main, crear un array de 7 elementos, que contenga empleados de todos los tipos y, posteriormente mostrar su información por pantalla.
  */
+import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
 

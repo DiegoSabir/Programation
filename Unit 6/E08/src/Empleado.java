@@ -6,31 +6,51 @@ public class Empleado {
 
     private double sueldo;
 
-    private Date FechaIncorporacion;
+    private Date fechaIncorporacion;
 
-    public Empleado(String name, double salary, int año, int mes, int dia){
+    public Empleado(String name, double salary, int año, int mes, int dia) {
         nombre = name;
 
         sueldo = salary;
 
         GregorianCalendar fecha = new GregorianCalendar(año, mes - 1, dia);
 
-        FechaIncorporacion = fecha.getTime();
+        fechaIncorporacion = fecha.getTime();
     }
 
-    public String getNombre(){
+    public String getNombre() {
 
         return nombre;
     }
 
-    public double getSueldo(){
+    public void setNombre(String nombre) {
+
+        this.nombre = nombre;
+    }
+
+    public double getSueldo() {
 
         return sueldo;
     }
 
-    public Date getFechaIncorporacion(){
+    public void setSueldo(double sueldo) {
 
-        return FechaIncorporacion;
+        this.sueldo = sueldo;
+    }
+
+    public Date getFechaIncorporacion() {
+
+        return fechaIncorporacion;
+    }
+
+    public void setFechaIncorporacion(Date fechaIncorporacion) {
+
+        this.fechaIncorporacion = fechaIncorporacion;
+    }
+
+    public String toString() {
+
+        return "Nombre: " + nombre + ", Sueldo: " + sueldo + ", Fecha Incorporación: " + fechaIncorporacion;
     }
 
 }

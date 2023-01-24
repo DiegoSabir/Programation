@@ -1,18 +1,27 @@
+import java.util.*;
+
 public class Tecnico extends Operario {
     private int seccion;
 
-    public int getSeccion(){
+    public Tecnico(String nombre, double sueldo, int año, int mes, int dia, String area, String nave, int seccion) {
+
+        super(nombre, sueldo, año, mes, dia, area, nave);
+        this.seccion = seccion;
+    }
+
+    public int getSeccion() {
+
         return seccion;
     }
 
-    public void getSeccion(){
-        this.seccion;
+    public void setSeccion(int seccion) {
+
+        this.seccion = seccion;
     }
 
-    public Tecnico (int area, String nave, String nombre, double salario, String, fecha, int seccion){
-        super(area, nave, nombre, salario, fecha);
-        this.lineaFabricacion
+    public String toString() {
 
+        return super.toString() + "Sección: " + seccion;
     }
 
 
