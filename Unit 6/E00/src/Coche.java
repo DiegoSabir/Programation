@@ -28,18 +28,18 @@ public class Coche {
         peso_plataforma = 500;
     }
 
-    public String datos_generales(){                        //METODO GETTER
+    public String getDatos(){                        //METODO GETTER
 
-        return "La plataforma tiene " + ruedas + " ruedas, el largo son " +
-                largo/1000 + "m, un ancho de " + ancho + "m y un peso de "
-                + peso_plataforma + "kg.";
+        return "La plataforma del vehiculo tiene " + ruedas + " ruedas, el largo son " + largo/1000 + "m, un ancho de "
+                + ancho + "m y un peso de " + peso_plataforma + "kg.";
     }
 
-    public void establece_color(String color_coche){      //METODO SETTER
+    public void setColor(String color_coche){      //METODO SETTER
+
         color = color_coche;
     }
 
-    public String dime_color(){
+    public String getColor(){
 
         return "El color del coche es " + color;
     }
@@ -57,7 +57,7 @@ public class Coche {
         }
     }
 
-    public String dime_asientos(){
+    public String getAsientos(){
 
         if(asientos_cuero == true){
 
@@ -82,7 +82,7 @@ public class Coche {
         }
     }
 
-    public String dime_climatizador(){
+    public String getClimatizador(){
 
         if(climatizador == true){
 
@@ -94,7 +94,8 @@ public class Coche {
         }
     }
 
-    public String dime_peso(){
+    public String getPeso(){
+
         int peso_carroceria = 500;
 
         peso_total = peso_plataforma + peso_carroceria;
@@ -111,7 +112,7 @@ public class Coche {
         return "El peso del coche es " + peso_total;
     }
 
-    public int dime_precio(){
+    public int getPrecio(){
 
         int precio_final = 10000;
 
@@ -119,6 +120,7 @@ public class Coche {
 
             precio_final += 500;
         }
+
         if(climatizador == true){
 
             precio_final += 200;

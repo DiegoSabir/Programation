@@ -7,9 +7,9 @@ public class Pruebas {
 
         trabajador1.cambiarSeccion("RRHH");
 
-        System.out.println(trabajador1.devolucionDatos());
-        System.out.println(trabajador2.devolucionDatos());
-        System.out.println(trabajador3.devolucionDatos());
+        System.out.println(trabajador1.getDatos());
+        System.out.println(trabajador2.getDatos());
+        System.out.println(trabajador3.getDatos());
     }
 
     static class Empleados{
@@ -39,9 +39,14 @@ public class Pruebas {
             this.seccion = seccion;
         }
 
-        public String devolucionDatos(){
+        public String getDatos(){
 
             return "Nombre: " + nombre + ", Seccion: " + seccion + ", ID: " + idEmpleado;
+        }
+
+        public static String getIdNext() {
+
+            return "El siguiente ID es: " + idNext;
         }
 
     }
