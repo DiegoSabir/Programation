@@ -1,9 +1,7 @@
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Empleado {
-
-        private String nombre;
+class Empleado extends Persona{
 
         private double sueldo;
 
@@ -11,7 +9,7 @@ public class Empleado {
 
         public Empleado(String nombre, double sueldo, int año, int mes, int dia){
 
-            this.nombre = nombre;
+            super(nombre);
 
             this.sueldo = sueldo;
 
@@ -20,14 +18,9 @@ public class Empleado {
             altaContrato = calendario.getTime();
         }
 
-        public Empleado(){
+        public String getDescripcion(){
 
-            this(nombre, 1000, 2025, 06, 21)
-        }
-
-        public String getNombre(){
-
-            return nombre;
+            return "Salario: " + sueldo;
         }
 
         public double getSueldo(){
