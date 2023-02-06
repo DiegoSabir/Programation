@@ -8,26 +8,13 @@
  * O        Octal (String)
  * Realiza un main para probar todo lo anterior
  */
-
-class conversor{
-    private String Binario;
-    private String Hexadecimal;
-    private String Octal;
-
-    public conversor(Binario, Hexadecimal, Octal){
-
-    }
-
-
-
-}
-
-
-
-
-
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        Conversor s = new Conversor(25);
+
+        System.out.println(s.getTipoDato("B"));
+        System.out.println(s.getTipoDato("H"));
+        System.out.println(s.getTipoDato("O"));
     }
 }
