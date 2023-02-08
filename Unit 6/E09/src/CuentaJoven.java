@@ -55,7 +55,7 @@ public class CuentaJoven extends Cuenta{
         this.edad = edad;
     }
 
-    public boolean esTitularValido(int edad) {
+    public boolean esTitularValido() {
 
         if(edad >= 18 && edad <= 25) {
 
@@ -69,7 +69,7 @@ public class CuentaJoven extends Cuenta{
 
     public void retirar(double cantidad) {
 
-        if (esTitularValido() == false) {
+        if (!esTitularValido()) {
 
             System.out.println("Retirada cancelada. Titular no válido");
         }

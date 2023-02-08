@@ -48,7 +48,7 @@ public class Cuenta {
 
         if(cantidad > 0) {
 
-            cantidad += cantidad;
+            this.cantidad += cantidad;
         }
     }
 

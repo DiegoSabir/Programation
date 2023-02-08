@@ -23,6 +23,4 @@ public class Tecnico extends Operario {
 
         return super.toString() + "Sección: " + seccion;
     }
-
-
 }
