@@ -1,17 +1,17 @@
 import java.util.*;
 
 public class Empleado {
-
     private String nombre;
 
     private double sueldo;
 
     private Date fechaIncorporacion;
 
-    public Empleado(String name, double salary, int año, int mes, int dia) {
-        nombre = name;
+    public Empleado(String nombre, double sueldo, int año, int mes, int dia) {
 
-        sueldo = salary;
+        this.nombre = nombre;
+
+        this.sueldo = sueldo;
 
         GregorianCalendar fecha = new GregorianCalendar(año, mes - 1, dia);
 
@@ -50,7 +50,7 @@ public class Empleado {
 
     public String toString() {
 
-        return "Nombre: " + nombre + ", Sueldo: " + sueldo + ", Fecha Incorporación: " + fechaIncorporacion;
+        return "Nombre: " + nombre + ", Sueldo: " + sueldo + ", Fecha de Incorporación: " + fechaIncorporacion;
     }
 
 }

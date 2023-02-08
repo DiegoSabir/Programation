@@ -11,7 +11,6 @@
  * gestionar sus datos a traves de atributos, lo realice mediante un objeto de tipo Titular.
  */
 public class Titular {
-
     private String nombre;
 
     private int edad;
@@ -23,6 +22,13 @@ public class Titular {
         this.nombre = nombre;
         this.edad = edad;
         this.dni = dni;
+    }
+
+    public Titular(){
+
+        this.nombre = "";
+        this.edad = 0;
+        this.dni = "";
     }
 
     public String getNombre() {

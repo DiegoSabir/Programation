@@ -1,5 +1,4 @@
 public class Cuenta {
-
     private String titular;
 
     private double cantidad;
@@ -8,7 +7,14 @@ public class Cuenta {
 
         this.titular = titular;
 
-        this.cantidad = cantidad;
+        if (cantidad < 0) {
+
+            this.cantidad = 0;
+        }
+        else {
+
+            this.cantidad = cantidad;
+        }
     }
 
     public Cuenta (String titular){
@@ -38,16 +44,28 @@ public class Cuenta {
         this.cantidad = cantidad;
     }
 
-    public String toString() {
-
-        return "Titular: " + titular + ", Cantidad: " + cantidad;
-    }
-
     public void ingresar(double cantidad) {
 
         if(cantidad > 0) {
 
             cantidad += cantidad;
         }
+    }
+
+    public void retirar(double cantidad) {
+
+        if (this.cantidad - cantidad < 0) {
+
+            this.cantidad = 0;
+        }
+        else {
+
+            this.cantidad -= cantidad;
+        }
+    }
+
+    public String toString() {
+
+        return "Titular: " + titular + ", Cantidad: " + cantidad;
     }
 }

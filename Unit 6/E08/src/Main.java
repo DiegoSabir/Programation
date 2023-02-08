@@ -20,13 +20,13 @@ public class Main {
 
         Empleado[] misEmpleados = new Empleado[7];
 
-        misEmpleados[0] =new Empleado("Diego", 5000, 1998, 12, 21);
-        misEmpleados[1] =new Empleado("Ivan", 1000, 1993, 11, 21);
-        misEmpleados[2] =new Empleado("Pablo", 1000, 2000, 11, 6);
-        misEmpleados[3] =new Empleado("Fran", 1000, 1997, 9, 22);
-        misEmpleados[4] =new Empleado("Angel", 1000, 1998, 12, 21);
-        misEmpleados[5] =new Empleado("David", 1000, 2004, 4, 6);
-        misEmpleados[6] =new Empleado("Gonzalo", 1000, 1997, 10, 23);
+        misEmpleados[0] =new Directivo("Diego", 5000, 1998, 12, 21, "director", "ejecutivo");
+        misEmpleados[1] =new Directivo("Ivan", 1000, 1993, 11, 21,"supervisor", "personal");
+        misEmpleados[2] =new Directivo("Pablo", 1000, 2000, 11, 6,"gestor", "logistica");
+        misEmpleados[3] =new Operario("Fran", 1000, 1997, 9, 22, "zona 3", "nave 2");
+        misEmpleados[4] =new Oficial("Angel", 1000, 1998, 12, 21, "zona 3", "nave 1", "linea 1");
+        misEmpleados[5] =new Oficial("David", 1000, 2004, 4, 6, "zona 2", "nave 3", "linea 2");
+        misEmpleados[6] =new Oficial("Gonzalo", 1000, 1997, 10, 23, "zona 1", "nave 2", "linea 3");
 
         for (int i = 0; i <= 6; i++){
 
