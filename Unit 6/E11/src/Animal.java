@@ -3,13 +3,18 @@ public class Animal extends SerVivo{
     private double altura;
     private double peso;
 
-    public Animal(String nombrecientifico, String nombrecomun, double altura, double peso) {
+    public Animal(String nombreCientifico, String nombreComun, double altura, double peso) {
 
-        super(nombrecientifico, nombrecomun);
+        super(nombreCientifico, nombreComun);
 
         this.altura = altura;
 
         this.peso = peso;
+    }
+
+    public Animal(String nombreCientifico, String nombreComun) {
+
+        super(nombreCientifico, nombreComun);
     }
 
     public double getAltura() {
@@ -32,9 +37,7 @@ public class Animal extends SerVivo{
         this.peso = peso;
     }
 
-    String alimentar(){
-
-        return null;
+    public void alimentacion(){
+        System.out.println("kgktkg");
     }
-
 }

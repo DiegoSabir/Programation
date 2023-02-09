@@ -12,6 +12,15 @@
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        Figura[] Geometria = new Figura[2];
+
+        Geometria[0] = new Cuadrado("Azul",5);
+        Geometria[1] = new Triangulo("Rojo",5,5);
+
+        for(Figura f: Geometria) {
+
+            System.out.println(f.calcularArea());
+        }
     }
 }

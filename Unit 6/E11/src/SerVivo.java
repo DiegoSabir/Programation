@@ -1,3 +1,5 @@
+import java.security.PublicKey;
+
 /**
  * Codifica la jerarquia ser vivo, animal y vegetal, creando las estructuras que consideres necesario para almacenar de
  * cada elemento como minimo nombre cientifico y nombre comun. Para los animales almacenar peso y altura. Para los
@@ -6,36 +8,36 @@
  */
 public abstract class SerVivo {
 
-    private String nombrecientifico;
+    private String nombreCientifico;
 
-    private String nombrecomun;
+    private String nombreComun;
 
-    public SerVivo(String nombrecientifico, String nombrecomun) {
+    public SerVivo(String nombreCientifico, String nombreComun) {
 
-        this.nombrecientifico = nombrecientifico;
+        this.nombreCientifico = nombreCientifico;
 
-        this.nombrecomun = nombrecomun;
+        this.nombreComun = nombreComun;
     }
 
-    public String getNombrecientifico() {
+    public String getNombreCientifico() {
 
-        return nombrecientifico;
+        return nombreCientifico;
     }
 
-    public void setNombrecientifico(String nombrecientifico) {
+    public void setNombreCientifico(String nombreCientifico) {
 
-        this.nombrecientifico = nombrecientifico;
+        this.nombreCientifico = nombreCientifico;
     }
 
-    public String getNombrecomun() {
+    public String getNombreComun() {
 
-        return nombrecomun;
+        return nombreComun;
     }
 
-    public void setNombrecomun(String nombrecomun) {
+    public void setNombreComun(String nombreComun) {
 
-        this.nombrecomun = nombrecomun;
+        this.nombreComun = nombreComun;
     }
 
-    abstract String alimentar();
+    public abstract void alimentacion();
 }

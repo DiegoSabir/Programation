@@ -1,12 +1,16 @@
 public class Vegetal extends SerVivo{
-
     private double altura;
 
-    public Vegetal(String nombrecientifico, String nombrecomun, double altura) {
+    public Vegetal(String nombreCientifico, String nombreComun, double altura) {
 
-        super(nombrecientifico, nombrecomun);
+        super(nombreCientifico, nombreComun);
 
         this.altura = altura;
+    }
+
+    public Vegetal(String nombreCientifico, String nombreComun) {
+
+        super(nombreCientifico, nombreComun);
     }
 
     public double getAltura() {
@@ -19,10 +23,9 @@ public class Vegetal extends SerVivo{
         this.altura = altura;
     }
 
-    String alimentar(){
+    public void alimentacion(){
 
-        return null;
+        System.out.println("Fotosintesis");
     }
-
 }
 

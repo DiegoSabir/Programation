@@ -43,22 +43,22 @@ public class Aparato {
 
     public Aparato() {
 
-        pvp = 100;
+        this.pvp = 100;
 
-        color = "blanco";
+        this.color = "blanco";
 
-        consumo = 'F';
+        this.consumo = 'F';
 
-        peso = 5;
+        this.peso = 5;
     }
 
     public Aparato(double pvp, double peso){
 
         this.pvp = pvp;
 
-        color = "blanco";
+        this.color = "blanco";
 
-        consumo = 'F';
+        this.consumo = 'F';
 
         this.peso = peso;
     }
@@ -86,7 +86,7 @@ public class Aparato {
         return pvp;
     }
 
-    public void setPVP(int pvp){
+    public void setPVP(double pvp){
 
         this.pvp = pvp;
     }
@@ -106,7 +106,7 @@ public class Aparato {
         return peso;
     }
 
-    public boolean comprobarConsumo(char letra){
+    private boolean comprobarConsumo(char consumo){
 
         return (consumo >= 65 && consumo <= 70);
     }
@@ -129,9 +129,6 @@ public class Aparato {
             case 'D':
                 return pvp *= 0.95;
         }
-
         return pvp;
     }
-
-
 }
