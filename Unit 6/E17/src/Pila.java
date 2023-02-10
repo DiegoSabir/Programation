@@ -1,24 +1,61 @@
+import java.util.NoSuchElementException;
+
 public class Pila implements CollectionInterface{
+    private Object[] array;
+
+    private int contador;
+
+    public Pila(int tamaño) {
+
+        array = new Object[tamaño];
+        contador = 0;
+    }
 
     public boolean isEmpty(){
+        if (contador == 0){
 
-        return false;
+            return true;
+        }
+        else{
+
+            return false;
+        }
+    }
+    public Object get() {
+        if (isEmpty()){
+
+            return null;
+        }
+        else{
+
+            Object toReturn = array[--contador];
+            eliminarUltimoElemento();
+            return toReturn;
+        }
     }
 
-    private String get(){
 
-        return null;
+    Object first() {
+
+        if (isEmpty()) {
+
+            return null;
+        }
+        else {
+
+            return array[contador - 1];
+        }
     }
 
-    public String first(){
+    public Object add(Object objeto) {
+        if(i == array.length){
 
-        return null;
+            return true;
+        }
+        else{
+            i++;
+            return false;
+        }
+
     }
-
-    public boolean add(){
-
-        return false;
-    }
-
-    Object[] array = new Object[1];
 }

@@ -1,24 +1,10 @@
 public interface CollectionInterface {
 
-    public boolean isEmpty(){
+    boolean isEmpty();
 
-        return false;
-    }
+    Object get();
 
-    private String get(){
+    Object first();
 
-        return null;
-    }
-
-    public String first(){
-
-        return null;
-    }
-
-    public boolean add(){
-
-        return false;
-    }
-
-    Object[] array = new Object[1];
+    Object add(Object objeto);
 }
