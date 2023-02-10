@@ -1,42 +1,78 @@
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-class Empleado extends Persona{
+class Empleado extends Persona implements Comparable, Trabajadores{
 
-        private double sueldo;
+    public int compareTo(Object miObjeto){
 
-        private Date altaContrato;
+        Empleado otroEmpleado = (Empleado) miObjeto;
 
-        public Empleado(String nombre, double sueldo, int año, int mes, int dia){
+        if(this.sueldo < otroEmpleado.sueldo){
 
-            super(nombre);
-
-            this.sueldo = sueldo;
-
-            GregorianCalendar calendario = new GregorianCalendar(año,mes - 1, dia);
-
-            altaContrato = calendario.getTime();
+            return -1;
         }
+        if(this.sueldo > otroEmpleado.sueldo){
 
-        public String getDescripcion(){
-
-            return "Salario: " + sueldo;
+            return 1;
         }
+        return 0;
+    }
 
-        public double getSueldo(){
+    private String nombre;
+    private double sueldo;
+    private Date altaContrato;
+    private static int idNext;
+    private int id;
 
-            return sueldo;
-        }
+    public Empleado(String nombre, double sueldo, int año, int mes, int dia){
 
-        public Date getFechaContrato(){
+        this.nombre = nombre;
 
-            return altaContrato;
-        }
+        this.sueldo = sueldo;
 
-        public void subeSueldo(double porcentaje){
+        GregorianCalendar calendario = new GregorianCalendar(año,mes - 1, dia);
 
-            double aumento = sueldo * porcentaje / 100;
+        altaContrato = calendario.getTime();
 
-            sueldo += aumento;
-        }
+        ++idNext;
+
+        id = idNext;
+    }
+
+    public Empleado(String nombre){
+
+        this(nombre, 3000, 2000, 01, 01);
+    }
+
+    public String getNombre(){
+
+        return nombre + "Id: " + id;
+    }
+
+    public double getSueldo(){
+
+        return sueldo;
+    }
+
+    public Date getFechaContrato(){
+
+        return altaContrato;
+    }
+
+    public void subeSueldo(double porcentaje){
+
+        double aumento = sueldo * porcentaje / 100;
+
+        sueldo += aumento;
+    }
+
+    public String getDescripcion(){
+
+        return "Salario: " + sueldo;
+    }
+
+    public double estableceBonus(double gratificacion){
+
+        return Trabajadores.bonusBase + gratificacion;
+    }
 }

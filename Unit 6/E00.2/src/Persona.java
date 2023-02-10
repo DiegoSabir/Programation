@@ -2,7 +2,6 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 abstract class Persona {
-
     private String nombre;
 
     public Persona (String nombre){

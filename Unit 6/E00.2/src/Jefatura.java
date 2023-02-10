@@ -1,4 +1,4 @@
-class Jefatura extends Empleado{
+class Jefatura extends Empleado implements Jefes{
 
     private double incentivo;
 
@@ -17,5 +17,17 @@ class Jefatura extends Empleado{
         double sueldoJefe = super.getSueldo();
 
         return sueldoJefe + incentivo;
+    }
+
+    public String tomarDecisiones(String decision) {
+
+        return "Decision: " + decision;
+    }
+
+    public double estableceBonus(double gratificacion){
+
+        double prima = 2000;
+
+        return Trabajadores.bonusBase + gratificacion + prima;
     }
 }
