@@ -1,54 +1,13 @@
 import java.util.*;
 
-public class Revistas implements Prestable{
-
-    private int codigo;
-
-    private String titulo;
-
-    private int añoPublicacion;
-
+public class Revistas extends Biblioteca implements Prestable{
     private int numero;
 
-    public Revistas(int codigo, String titulo, int añoPublicacion, int numero){
+    public Revistas(int codigo, String titulo, int añoPublicacion){
 
-        this.codigo= codigo;
-
-        this.titulo = titulo;
-
-        this.añoPublicacion = añoPublicacion;
+        super(codigo,titulo,añoPublicacion);
 
         this.numero = numero;
-    }
-
-    public int getCodigo() {
-
-        return codigo;
-    }
-
-    public void setCodigo(int codigo) {
-
-        this.codigo = codigo;
-    }
-
-    public String getTitulo() {
-
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-
-        this.titulo = titulo;
-    }
-
-    public int getAñoPublicacion() {
-
-        return añoPublicacion;
-    }
-
-    public void setAñoPublicacion(int añoPublicacion) {
-
-        this.añoPublicacion = añoPublicacion;
     }
 
     public int getNumero() {
@@ -63,26 +22,26 @@ public class Revistas implements Prestable{
 
     public String toString() {
 
-        return "Codigo: " + codigo + ", Titulo: " + titulo + ", Año de publicacion: " + añoPublicacion
+        return "Codigo: " + getCodigo() + ", Titulo: " + getTitulo() + ", Año de publicacion: " + getAñoPublicacion()
                 + ", Numero: " + numero;
     }
 
-    public Date prestar(int año, int mes, int dia){
+    public Date prestar(int añoPrestacion, int mesPrestacion, int diaPrestacion){
 
         Date fechaPrestacion;
 
-        GregorianCalendar fecha = new GregorianCalendar(año, mes - 1, dia);
+        GregorianCalendar fecha = new GregorianCalendar(añoPrestacion, mesPrestacion - 1, diaPrestacion);
 
         fechaPrestacion = fecha.getTime();
 
         return fechaPrestacion;
     }
 
-    public Date devolver(int año, int mes, int dia){
+    public Date devolver(int añoDevolucion, int mesDevolucion, int diaDevolucion){
 
         Date fechaDevolucion;
 
-        GregorianCalendar fecha = new GregorianCalendar(año, mes - 1, dia);
+        GregorianCalendar fecha = new GregorianCalendar(añoDevolucion, mesDevolucion - 1, diaDevolucion);
 
         fechaDevolucion = fecha.getTime();
 

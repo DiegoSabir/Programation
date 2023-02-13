@@ -1,54 +1,14 @@
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Libros implements Prestable{
-    private int codigo;
-
-    private String titulo;
-
-    private int añoPublicacion;
-
+public class Libros extends Biblioteca implements Prestable{
     private boolean prestado;
 
-    public Libros(int codigo, String titulo, int añoPublicacion, boolean prestado){
+    public Libros(int codigo, String titulo, int añoPublicacion){
 
-        this.codigo= codigo;
-
-        this.titulo = titulo;
-
-        this.añoPublicacion = añoPublicacion;
+        super(codigo, titulo, añoPublicacion);
 
         this.prestado = false;
-    }
-
-    public int getCodigo() {
-
-        return codigo;
-    }
-
-    public void setCodigo(int codigo) {
-
-        this.codigo = codigo;
-    }
-
-    public String getTitulo() {
-
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-
-        this.titulo = titulo;
-    }
-
-    public int getAñoPublicacion() {
-
-        return añoPublicacion;
-    }
-
-    public void setAñoPublicacion(int añoPublicacion) {
-
-        this.añoPublicacion = añoPublicacion;
     }
 
     public boolean isPrestado() {
@@ -58,33 +18,38 @@ public class Libros implements Prestable{
 
     public void setPrestado(boolean prestado) {
 
+
         this.prestado = prestado;
     }
 
     public String toString() {
 
-        return "Codigo: " + codigo + ", Titulo: " + titulo + ", Año de publicacion: " + añoPublicacion
+        return "Codigo: " + getCodigo() + ", Titulo: " + getTitulo() + ", Año de publicacion: " + getAñoPublicacion()
                 + ", Estado: " + prestado;
     }
 
-    public Date prestar(int año, int mes, int dia){
+    public Date prestar(int ano, int mes, int dia){
 
         Date fechaPrestacion;
 
-        GregorianCalendar fecha = new GregorianCalendar(año, mes - 1, dia);
+        GregorianCalendar fecha = new GregorianCalendar(ano, mes - 1, dia);
 
         fechaPrestacion = fecha.getTime();
 
-        return fechaPrestacion;
+        this.prestado = true;
+
+        return fechaPrestacion ;
     }
 
-    public Date devolver(int año, int mes, int dia){
+    public Date devolver(int añoPrestacion, int mesPrestacion, int diaPrestacion){
 
         Date fechaDevolucion;
 
-        GregorianCalendar fecha = new GregorianCalendar(año, mes - 1, dia);
+        GregorianCalendar fecha = new GregorianCalendar(añoPrestacion, mesPrestacion - 1, diaPrestacion);
 
         fechaDevolucion = fecha.getTime();
+
+        this.prestado = false;
 
         return fechaDevolucion;
     }
