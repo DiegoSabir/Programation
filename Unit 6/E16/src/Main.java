@@ -27,7 +27,8 @@ public class Main {
         Autor[] ListaAutores = new Autor[2];
 
         ListaAutores[0] = new Autor("123456789A", "George", 1998, 12, 21,
-                "Estadounidense","Calle Castelao", "+34 986 298 617", "G.R" + );
+                "Estadounidense","Calle Castelao", "+34 986 298 617", "G.R",2012,
+                12, 21);
 
         Libro[] Coleccion = new Libro[2];
 
