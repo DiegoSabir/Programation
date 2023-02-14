@@ -8,9 +8,9 @@
  * Por defecto, el color sera blanco, el consumo energético será F, el PVP 100 € y el peso 5 kg. Los posibles colores
  * son blanco, negro, rojo, azul y gris.
  * Constructores:
- * 	Por defecto.
- * 	Uno con el precio y peso. El resto por defecto.
- * 	Uno con todos los atributos.
+ *  * 	Por defecto.
+ *  * 	Uno con el precio y peso. El resto por defecto.
+ *  * 	Uno con todos los atributos.
  *
  * Métodos:
  * Getters y Setters.
@@ -32,94 +32,66 @@
  */
 
 public class Aparato {
-
     private double pvp;
-
     private String color;
-
     private char consumo;
-
     private double peso;
-
     public Aparato() {
-
         this.pvp = 100;
-
         this.color = "blanco";
-
         this.consumo = 'F';
-
         this.peso = 5;
     }
 
     public Aparato(double pvp, double peso){
-
         this.pvp = pvp;
-
         this.color = "blanco";
-
         this.consumo = 'F';
-
         this.peso = peso;
     }
 
     public Aparato (double pvp, String color, char consumo, double peso){
-
         this.pvp = pvp;
-
         this.color = color;
-
         if(comprobarConsumo(consumo)) {
-
             this.consumo = consumo;
         }
         else {
-
             this.consumo = 'F';
         }
-
         this.peso = peso;
     }
 
     public double getPVP(){
-
         return pvp;
     }
 
     public void setPVP(double pvp){
-
         this.pvp = pvp;
     }
 
     public String getColor(){
-
         return color;
     }
 
     public char getConsumo(){
-
         return consumo;
     }
 
     public double getPeso(){
-
         return peso;
     }
 
     private boolean comprobarConsumo(char consumo){
-
         return (consumo >= 65 && consumo <= 70);
     }
 
     public double aplicarDescuento() {
         switch (color) {
-
             case "gris":
                 pvp *= 0.95;
         }
-
         switch (consumo) {
-
             case 'A':
                 return pvp *= 0.8;
             case 'B':

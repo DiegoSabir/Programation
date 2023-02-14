@@ -24,6 +24,16 @@
  */
 public class Main {
     public static void main(String[] args) {
+        Empleado[] Personal = new Empleado[4];
+        //Si la clase es abstracta no puede ser instanciada.
+        Personal[0] = new Comercial("Diego Ribas", 24, 1000, 100);
+        Personal[1] = new Comercial("Ivan Santana", 31, 2000, 300);
+        Personal[2] = new Repartidor("Pablo Sierra", 22, 700, "3");
+        Personal[3] = new Repartidor("Francisco Miguez", 26, 1500, "3");
 
+        for (Empleado i: Personal){
+            System.out.println(i.toString());
+            System.out.println(i.plus());
+        }
     }
 }
