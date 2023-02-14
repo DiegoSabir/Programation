@@ -13,54 +13,41 @@
  */
 
 public class Frigorifico extends Aparato {
-
     private int capacidad;
 
     private double altura;
 
     public Frigorifico(double pvp, double peso, int capacidad, double altura) {
-
         super(pvp, peso);
-
         this.capacidad = 300;
-
         this.altura = 170;
     }
 
     public Frigorifico(double pvp, String color, char consumo, double peso, int capacidad, double altura){
-
         super(pvp, color, consumo, peso);
-
         this.capacidad = 300;
-
         this.altura = 170;
     }
 
     public int getCapacidad() {
-
         return capacidad;
     }
 
     public void setCapacidad(int capacidad) {
-
         this.capacidad = capacidad;
     }
 
     public double getAltura() {
-
         return altura;
     }
 
     public void setAltura(double altura) {
-
         this.altura = altura;
     }
 
     public double aplicarDescuento() {
-
         super.aplicarDescuento();
         if ((super.getConsumo() == 'A' || super.getConsumo() == 'B') && capacidad > 400) {
-
             super.setPVP(super.getPVP() * 0.9);
         }
         return super.getPVP();
