@@ -28,16 +28,14 @@ public class Main {
 
         ListaAutores[0] = new Autor("123456789A", "George", 1998, 12, 21,
                 "Estadounidense","Calle Castelao", "+34 986 298 617", "G.R",2012,
-                12, 21);
+                6, 26);
 
         Libro[] Coleccion = new Libro[2];
 
         Coleccion[0] = new Libro("9788491740322", "Cancion de Hielo y Fuego", ListaAutores[0], 192);
 
         for (Libro l: Coleccion){
-
             System.out.println(l.toString());
         }
-
     }
 }
