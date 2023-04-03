@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
+
 public class ArrayNames {
     private ArrayList<String> names = new ArrayList<>();
     private Scanner sc = new Scanner(System.in);
@@ -17,13 +17,13 @@ public class ArrayNames {
 
     public void showNames(){
         for (String i : names) {
-            System.out.println("The name " + i + " is in the " + names.indexOf(i) + 1 + "º position");
+            System.out.println("Name: " + i + ", Position: " + names.indexOf(i));
         }
     }
 
     public int searchNames() {
         sc = new Scanner(System.in);
-        System.out.println("Introduce the name:");
+        System.out.println("Name to search:");
         String search = sc.nextLine();
         return names.indexOf(search);
     }

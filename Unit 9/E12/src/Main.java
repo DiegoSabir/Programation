@@ -1,3 +1,5 @@
+import java.util.Date;
+
 /**
  * Se desea realizar una aplicación Java para la gestión de un hospital, almacenando
  * sus áreas, trabajadores y pacientes ingresados.
@@ -43,7 +45,16 @@
  * - Muestra por pantalla el área sanitaria que más coste anual ha supuesto en el año en curso.
  */
 public class Main {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
+        Date fechaEntrada = new Date(23/12/1998);
+        Date fechaAlta = new Date(25/12/1998);
+
+        Area area1= new Area("1", "traumatologia");
+        Paciente paciente1 = new Paciente();
+        Ingreso ingreso = new Ingreso(fechaEntrada, fechaAlta, area1);
+
+        paciente1.ingresos.put(2,ingreso);
+        System.out.println(paciente1.costeAnual());
     }
 }

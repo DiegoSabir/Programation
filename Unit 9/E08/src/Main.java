@@ -1,3 +1,6 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 /**
  * Se va a implementar una agenda telefónica de contactos.
  * Un contacto está definido por un nombre y un teléfono (No es necesario validar). Un contacto es igual a otro cuando sus nombres son iguales.
@@ -17,6 +20,95 @@
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        Scanner sc = new Scanner(System.in);
+        sc.useDelimiter("\n");
+        boolean exit = false;
+        int choose;
+
+        ContactList listContact = new ContactList(3);
+        String name;
+        int telephone;
+
+        Contact account;
+
+        while (!exit) {
+            System.out.println("1. Add contact");
+            System.out.println("2. List contacts");
+            System.out.println("3. Search contacts");
+            System.out.println("4. Check contact existence");
+            System.out.println("5. Remove contact");
+            System.out.println("6. Show contacts");
+            System.out.println("7. Check contact list full");
+            System.out.println("8. Exit");
+            try {
+                System.out.println("Escribe una de las opciones");
+                choose = sc.nextInt();
+
+                switch (choose) {
+                    case 1:
+                        System.out.println("Name: ");
+                        name = sc.next();
+                        System.out.println("Telephone: ");
+                        telephone = sc.nextInt();
+                        account = new Contact(name, telephone);
+                        listContact.addContacts(account);
+                        break;
+
+                    case 2:
+                        listContact.listContacts();
+                        break;
+
+                    case 3:
+                        System.out.println("Name: ");
+                        name = sc.next();
+                        listContact.searchByName(name);
+                        break;
+
+                    case 4:
+                        System.out.println("Name: ");
+                        name = sc.next();
+                        account = new Contact(name, 0);
+                        if (listContact.contactExist(account)) {
+                            System.out.println("Contact found");
+                        }
+                        else {
+                            System.out.println("Contact not found");
+                        }
+                        break;
+
+                    case 5:
+                        System.out.println("Name:");
+                        name = sc.next();
+                        account = new Contact(name, 0);
+                        listContact.removeContact(account);
+                        break;
+
+                    case 6:
+                        System.out.println("Free space: " + listContact.freeSpace());
+                        break;
+
+                    case 7:
+                        if (listContact.contactListFull()) {
+                            System.out.println("The contact list is full");
+                        }
+                        else {
+                            System.out.println("You can still introduce contacts");
+                        }
+                        break;
+
+                    case 8:
+                        exit = true;
+                        break;
+
+                    default:
+                        System.out.println("Only numbers between 1 y 8");
+                }
+
+            } catch (InputMismatchException e) {
+                System.out.println("Introduce a number");
+                sc.next();
+            }
+        }
     }
 }

@@ -6,14 +6,13 @@
  * Por ultimo desarrolar un metoodo para eliminar un nombre de la lista.
  */
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
         ArrayNames array = new ArrayNames();
 
-        System.out.println("Introduce a name(write 'exit' to exit):");
+        System.out.println("Introduce a name('exit' to stop):");
         array.introduceNames();
 
         System.out.println("Show:");
