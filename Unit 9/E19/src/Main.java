@@ -54,7 +54,7 @@ public class Main {
             System.out.println("4. Salario medio anual");
             System.out.println("5. Conjunto productos sección de Paco");
             System.out.println("6. Caducidad productos de conservas año 2024");
-            System.out.println("8. Salir");
+            System.out.println("7. Salir");
 
             try {
                 System.out.println("Escribe una de las opciones");
@@ -98,6 +98,7 @@ public class Main {
         Seccion pesc = new Seccion(2, "pescaderia");
         Seccion carnic = new Seccion(3, "carniceria");
         Seccion conservas = new Seccion(4, "conservas");
+
         try {
             Empleado e1 = new Empleado("22222222B", "Maria", 50, "principe 43", 1200, charc, sdf.parse("01/05/2016"));
             e1.agregarEntradaRegistro(new RegistroLaboral(pesc, sdf.parse("01/05/2016"), sdf.parse("02/08/2021")));
