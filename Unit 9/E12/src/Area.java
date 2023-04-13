@@ -1,38 +1,25 @@
 public class Area {
-    private String idArea;
-    private String nombreEspecialiad;
+    private int areaId;
+    private String areaName;
 
-    public Area(){
-        this.idArea = "areaDefecto";
-        this.nombreEspecialiad = "especialidadDefecto";
+    public Area(int areaId, String areaName) {
+        this.areaId = areaId;
+        this.areaName = areaName;
     }
 
-    public Area(String idArea, String nombreEspecialiad) {
-        this.idArea = idArea;
-        this.nombreEspecialiad = nombreEspecialiad;
+    public int getAreaId() {
+        return areaId;
     }
 
-    public String getIdArea() {
-        return idArea;
+    public void setAreaId(int areaId) {
+        this.areaId = areaId;
     }
 
-    public void setIdArea(String idArea) {
-        this.idArea = idArea;
+    public String getAreaName() {
+        return areaName;
     }
 
-    public String getNombreEspecialiad() {
-        return nombreEspecialiad;
-    }
-
-    public void setNombreEspecialiad(String nombreEspecialiad) {
-        this.nombreEspecialiad = nombreEspecialiad;
-    }
-
-    @Override
-    public String toString() {
-        return "Area{" +
-                "idArea='" + idArea + '\'' +
-                ", nombreEspecialiad='" + nombreEspecialiad + '\'' +
-                '}';
+    public void setAreaName(String areaName) {
+        this.areaName = areaName;
     }
 }
