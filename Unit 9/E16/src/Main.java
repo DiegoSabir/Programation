@@ -52,7 +52,7 @@ public class Main {
         Main choise = new Main();
 
         do {
-            System.out.print("Introduce a option: ");
+            System.out.println("Introduce a option: ");
             System.out.println("[1] Create a member list");
             System.out.println("[2] Shows the average age of teachers");
             System.out.println("[3] Calculate the average grade obtained by the students of the Computer Engineering degree");
