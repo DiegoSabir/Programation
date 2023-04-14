@@ -5,10 +5,10 @@ public class Person {
     private String address;
 
     public Person() {
-        this.dni = "defectDni";
-        this.name = "defectName";
-        this.age = 0;
-        this.address = "defectAddress";
+        this.dni = "Defect Dni";
+        this.name = "Defect Name";
+        this.age = 18;
+        this.address = "Defect Address";
     }
 
     public Person(String dni, String name, int age, String address) {

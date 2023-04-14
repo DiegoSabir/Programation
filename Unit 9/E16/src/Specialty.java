@@ -2,6 +2,11 @@ public class Specialty {
     private int specialtyId;
     private String specialtyName;
 
+    public Specialty() {
+        this.specialtyId = 0;
+        this.specialtyName = "Defect Specialty Name";
+    }
+
     public Specialty(int specialtyId, String specialtyName) {
         this.specialtyId = specialtyId;
         this.specialtyName = specialtyName;

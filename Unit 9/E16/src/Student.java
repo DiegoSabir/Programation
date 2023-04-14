@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Student extends Member {
@@ -5,7 +6,14 @@ public class Student extends Member {
     private double gradeAverage;
     private double enrollmentCost;
 
-    public Student(String dni, String name, int age, String address, Date joiningDate, Specialty degreeEnrolled, double gradeAverage, double enrollmentCost) {
+    public Student(String dni, String name, int age, String address, LocalDate joiningDate) {
+        super(dni, name, age, address, joiningDate);
+        this.degreeEnrolled = new Specialty();
+        this.gradeAverage = 0.00;
+        this.enrollmentCost = 100.00;
+    }
+
+    public Student(String dni, String name, int age, String address, LocalDate joiningDate, Specialty degreeEnrolled, double gradeAverage, double enrollmentCost) {
         super(dni, name, age, address, joiningDate);
         this.degreeEnrolled = degreeEnrolled;
         this.gradeAverage = gradeAverage;
@@ -37,6 +45,6 @@ public class Student extends Member {
     }
 
     public void discountBonusApply(){
-        if
+
     }
 }

@@ -1,10 +1,18 @@
+import java.time.LocalDate;
 import java.util.Date;
 public class Professor extends Member{
     private String workdayType;
     private double salary;
     private Specialty specialtyGive;
 
-    public Professor(String dni, String name, int age, String address, Date joiningDate, String workdayType, double salary, Specialty specialtyGive) {
+    public Professor(String dni, String name, int age, String address, LocalDate joiningDate) {
+        super(dni, name, age, address, joiningDate);
+        this.workdayType = "Defect workday Type";
+        this.salary = 1000;
+        this.specialtyGive = new Specialty();
+    }
+
+    public Professor(String dni, String name, int age, String address, LocalDate joiningDate, String workdayType, double salary, Specialty specialtyGive) {
         super(dni, name, age, address, joiningDate);
         this.workdayType = workdayType;
         this.salary = salary;

@@ -58,16 +58,16 @@ public class Patient extends Person {
             adm = this.admissionHistory.get(codigo);
 
             //Resta de fechas
-            long tiempoTranscurrido = adm.getDischargeDate().getTime() - adm.getAdmissionDate().getTime();
+            long elapsedTime = adm.getDischargeDate().getTime() - adm.getAdmissionDate().getTime();
 
             //Señalar en que rango de valores trabajos(años, dias, meses, ...)
             TimeUnit timeValue = TimeUnit.DAYS;
-            long days = timeValue.convert(tiempoTranscurrido, TimeUnit.MILLISECONDS);
+            long days = timeValue.convert(elapsedTime, TimeUnit.MILLISECONDS);
 
             //Calcular los costes
             partialCost = days * 700;
             if (adm.getAdmissionArea().getAreaName().equalsIgnoreCase("Orthopedics")){
-                partialCost *=1.02;
+                partialCost *= 1.02;
             }
             totalCost += partialCost;
         }

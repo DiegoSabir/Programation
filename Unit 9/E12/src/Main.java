@@ -176,19 +176,20 @@ public class Main {
             Iterator it = admissions.keySet().iterator();
             Admission adm;
 
+
             while(it.hasNext()){
                 Integer codigo = (Integer) it.next();
                 adm = admissions.get(codigo);
 
                 //Resta de fechas
-                long tiempoTranscurrido = adm.getDischargeDate().getTime() - adm.getAdmissionDate().getTime();
+                long elapsedTime = adm.getDischargeDate().getTime() - adm.getAdmissionDate().getTime();
 
                 //Señalar en que rango de valores trabajos(años, dias, meses, ...)
                 TimeUnit timeValue = TimeUnit.DAYS;
-                long days = timeValue.convert(tiempoTranscurrido, TimeUnit.MILLISECONDS);
+                long days = timeValue.convert(elapsedTime, TimeUnit.MILLISECONDS);
             }
+            System.out.println("Patient: " + patients.get(i).getName() + ", Total Admissioned Days: " + days);
         }
-        System.out.println("Patient: " + patients.get(i).getName() + ", Total Admissioned Days: " + days);
     }
 
     private void higherCostWorkArea(){

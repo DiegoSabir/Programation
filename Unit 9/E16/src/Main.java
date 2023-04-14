@@ -32,28 +32,61 @@
  *   circunstancias, deberá mostrarse por pantalla un error y volver a solicitar el
  *   dato.
  * - Muestra por pantalla la edad media de los profesores.
- * - Calcula la nota media obtenida por los alumnos del ciclo DAM.
+ * - Calcula la nota media obtenida por los alumnos de Ingenieria Informatica.
  * - Calcula el salario medio de los profesores
  */
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
+    ArrayList<Member> members = new ArrayList<>();
+    ArrayList<Specialty> specialties = new ArrayList<>();
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int option;
+        Main choise = new Main();
+
+        do {
+            System.out.print("Introduce a option: ");
+            System.out.println("[1] Create a member list");
+            System.out.println("[2] Shows the average age of teachers");
+            System.out.println("[3] Calculate the average grade obtained by the students of the Computer Engineering degree");
+            System.out.println("[4] Calculate the average salary of teachers");
+            System.out.println("[5] Exit");
+
+            option = sc.nextInt();
+            switch (option) {
+                case 1:
+                    choise.createList();
+                    break;
+                case 2:
+                    choise.showAverageAgeProfessors();
+                    break;
+                case 3:
+                    choise.showAverageGradeComputerStudents();
+                    break;
+                case 4:
+                    choise.showAverageSalaryProfessors();
+                    break;
+                default:
+                    System.out.println("Only numbers between 1 and 5");
+            }
+        }
+        while (option != 5);
+    }
+
+    public void createList() {
         String dni, name, address, workdayType, memberType;
         int age, specialtyId;
         double salary, gradeAverage, enrollmentCost;
-        Date joiningDate;
+        LocalDate joiningDate;
 
         Scanner sc = new Scanner(System.in);
-
-        ArrayList<Member> members = new ArrayList<>();
-        ArrayList<Specialty> specialties = new ArrayList<>();
 
         Specialty spe1 = new Specialty(1, "Aerospace Engineering");
         Specialty spe2 = new Specialty(2, "Chemical Engineering");
@@ -67,8 +100,7 @@ public class Main {
         specialties.add(spe4);
         specialties.add(spe5);
 
-        //for (int i = 0; i < patients.size(); i++) {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 2; i++) {
             boolean validData = true;
             System.out.println("Are you a professor or student?");
             memberType = sc.nextLine();
@@ -83,7 +115,7 @@ public class Main {
                         address = sc.nextLine();
 
                         System.out.println("Introduce your joining date to the university");
-                        joiningDate = new SimpleDateFormat("dd/MM/yyyy").parse(sc.nextLine());
+                        joiningDate = LocalDate.ofEpochDay(sc.nextInt());
 
                         System.out.println("Introduce your workday type and salary");
                         workdayType = sc.nextLine();
@@ -93,7 +125,7 @@ public class Main {
                         specialtyId = sc.nextInt();
 
                         members.add(new Professor(dni, name, age, address, joiningDate, workdayType, salary, specialties.get(specialtyId)));
-                    } catch (ParseException | InputMismatchException e) {
+                    } catch (InputMismatchException e) {
                         validData = false;
                         System.out.println("ERROR: INTRODUCE THE DATA AGAIN");
                     }
@@ -102,65 +134,82 @@ public class Main {
             else {
                 do {
                     try {
-                        System.out.println("Introduce your dni, name, age and address");
+                        System.out.println("Introduce your dni: ");
                         dni = sc.nextLine();
+                        System.out.println("Introduce your name: ");
                         name = sc.nextLine();
+                        System.out.println("Introduce age: ");
                         age = sc.nextInt();
+
+                        sc = new Scanner(System.in);
+
+                        System.out.println("Introduce your address: ");
                         address = sc.nextLine();
 
                         System.out.println("Introduce your joining date to the university");
-                        joiningDate = new SimpleDateFormat("dd/MM/yyyy").parse(sc.nextLine());
+                        joiningDate = LocalDate.ofEpochDay(sc.nextInt());
 
-                        System.out.println("Introduce your grade average and enrollment cost");
+
+                        System.out.println("Introduce your grade average: ");
+                        sc = new Scanner(System.in);
                         gradeAverage = sc.nextDouble();
+
+                        System.out.println("Introduce your enrollment cost: ");
                         enrollmentCost = sc.nextDouble();
 
                         System.out.println("Introduce your enrolled degree");
+                        sc = new Scanner(System.in);
                         specialtyId = sc.nextInt();
 
                         members.add(new Student(dni, name , age, address, joiningDate, specialties.get(specialtyId), gradeAverage, enrollmentCost));
-                    } catch (ParseException | InputMismatchException e) {
+                    } catch (InputMismatchException e) {
                         validData = false;
                         System.out.println("ERROR: INTRODUCE THE DATA AGAIN");
                     }
                 } while (!validData);
             }
         }
+    }
 
-        public void showAverageAgeProfessors(){
-            int addition = 0;
-            int counter = 0;
-            for (int i = 0; i < members.size(); i++) {
-                if (members.get(i) instanceof Professor) {
-                    addition += ((Professor) members.get(i)).getAge();
-                    counter++;
-                }
+    public void showAverageAgeProfessors(){
+        double addition = 0;
+        int counter = 0;
+        double average;
+        for (int i = 0; i < members.size(); i++) {
+            if (members.get(i) instanceof Professor) {
+                addition += ((Professor) members.get(i)).getAge();
+                counter++;
             }
-            System.out.println();
         }
+        average = addition / counter;
+        System.out.println("Average Age Professors: " + average);
+    }
 
-        public void showAverageGradeComputerStudents(){
-            int addition = 0;
-            int counter = 0;
-            for (int i = 0; i < members.size(); i++) {
-                if ((members.get(i) instanceof Student) && ((Student) members.get(i)).getDegreeEnrolled().equals("Computer Engineering")){
-                    addition += ((Student) members.get(i)).getGradeAverage();
-                    counter++;
-                }
+    public void showAverageGradeComputerStudents(){
+        double addition = 0;
+        int counter = 0;
+        double average;
+        for (int i = 0; i < members.size(); i++) {
+            if ((members.get(i) instanceof Student) && ((Student) members.get(i)).getDegreeEnrolled().equals("Computer Engineering")){
+                addition += ((Student) members.get(i)).getGradeAverage();
+                counter++;
             }
-            System.out.println();
         }
+        average = addition / counter;
+        System.out.println("Average Grade Computer Students: " + average);
+    }
 
-        public void showAverageSalaryProfessors(){
-            int addition = 0;
-            int counter = 0;
-            for (int i = 0; i < members.size(); i++) {
-                if (members.get(i) instanceof Professor) {
-                    addition += ((Professor) members.get(i)).getSalary();
-                    counter++;
-                }
+    public void showAverageSalaryProfessors(){
+        double addition = 0;
+        int counter = 0;
+        double average;
+        for (int i = 0; i < members.size(); i++) {
+            if (members.get(i) instanceof Professor) {
+                addition += ((Professor) members.get(i)).getSalary();
+                counter++;
             }
-            System.out.println();
         }
+        average = addition / counter;
+        System.out.println("Average Salary Professors: " + average);
     }
 }
