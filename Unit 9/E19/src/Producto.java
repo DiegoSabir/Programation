@@ -1,22 +1,22 @@
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Producto {
     private int idProducto;
-    private String nombre;
-    private Seccion seccion;
-    private Date fechaCaducidad;
+    private String nombreProducto;
+    private Seccion seccionLocalizado;
+    private LocalDate fechaCaducidad;
 
     public Producto() {
-        this.idProducto = -1;
-        this.nombre = "producto";
-        this.seccion = null;
-        this.fechaCaducidad = new Date();
+        this.idProducto = 1;
+        this.nombreProducto = "DefectNombreProducto";
+        this.seccionLocalizado = new Seccion();
+        this.fechaCaducidad = LocalDate.of(2024,1,1);
     }
 
-    public Producto(int idProducto, String nombre, Seccion seccion, Date fechaCaducidad) {
+    public Producto(int idProducto, String nombreProducto, Seccion seccionLocalizado, LocalDate fechaCaducidad) {
         this.idProducto = idProducto;
-        this.nombre = nombre;
-        this.seccion = seccion;
+        this.nombreProducto = nombreProducto;
+        this.seccionLocalizado = seccionLocalizado;
         this.fechaCaducidad = fechaCaducidad;
     }
 
@@ -28,27 +28,27 @@ public class Producto {
         this.idProducto = idProducto;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreProducto() {
+        return nombreProducto;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreProducto(String nombreProducto) {
+        this.nombreProducto = nombreProducto;
     }
 
-    public Seccion getSeccion() {
-        return seccion;
+    public Seccion getSeccionLocalizado() {
+        return seccionLocalizado;
     }
 
-    public void setSeccion(Seccion seccion) {
-        this.seccion = seccion;
+    public void setSeccionLocalizado(Seccion seccionLocalizado) {
+        this.seccionLocalizado = seccionLocalizado;
     }
 
-    public Date getFechaCaducidad() {
+    public LocalDate getFechaCaducidad() {
         return fechaCaducidad;
     }
 
-    public void setFechaCaducidad(Date fechaCaducidad) {
+    public void setFechaCaducidad(LocalDate fechaCaducidad) {
         this.fechaCaducidad = fechaCaducidad;
     }
 
@@ -56,8 +56,8 @@ public class Producto {
     public String toString() {
         return "Producto{" +
                 "idProducto=" + idProducto +
-                ", nombre='" + nombre + '\'' +
-                ", seccion=" + seccion +
+                ", nombreProducto='" + nombreProducto + '\'' +
+                ", seccionLocalizado=" + seccionLocalizado +
                 ", fechaCaducidad=" + fechaCaducidad +
                 '}';
     }

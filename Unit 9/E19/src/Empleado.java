@@ -1,85 +1,59 @@
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.HashMap;
 
-public class Empleado extends Persona{
-    private double salarioMensual;
-    private Seccion seccion;
-    private Date fechaContratacion;
+public class Empleado extends Persona {
+    private double salario;
+    private Seccion seccionActual;
+    private LocalDate fechaContratacion;
+    private HashMap<Integer, RegistroLaboral> historialLaboral;
+    private int contadorHistorial = 0;
 
-    private HashMap<Integer, RegistroLaboral> historico = new HashMap<>();
-
-    private int contHist = 0;
-
-    public Empleado() {
-        super();
-        this.salarioMensual = 0;
-        this.seccion = null;
-        this.fechaContratacion = new Date();
+    public Empleado(String dni, String nombre, int edad, String direccion) {
+        super(dni, nombre, edad, direccion);
+        this.salario = 1000;
+        this.seccionActual = new Seccion();
+        this.fechaContratacion = LocalDate.of(2023, 1, 1);
+        this.historialLaboral = new HashMap<>();
     }
 
-    public Empleado(String DNI, String nombre, int edad, String direccion, double salarioMensual, Seccion seccion, Date fechaContratacion) {
-        super(DNI, nombre, edad, direccion);
-        this.salarioMensual = salarioMensual;
-        this.seccion = seccion;
+    public Empleado(String dni, String nombre, int edad, String direccion, double salario, Seccion seccionActual, LocalDate fechaContratacion) {
+        super(dni, nombre, edad, direccion);
+        this.salario = salario;
+        this.seccionActual = seccionActual;
         this.fechaContratacion = fechaContratacion;
+        this.historialLaboral = new HashMap<>();
     }
 
-    public double getSalarioMensual() {
-        return salarioMensual;
+    public double getSalario() {
+        return salario;
     }
 
-    public void setSalarioMensual(double salarioMensual) {
-        this.salarioMensual = salarioMensual;
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
 
-    public Seccion getSeccion() {
-        return seccion;
+    public Seccion getSeccionActual() {
+        return seccionActual;
     }
 
-    public void setSeccion(Seccion seccion) {
-        this.seccion = seccion;
+    public void setSeccionActual(Seccion seccionActual) {
+        this.seccionActual = seccionActual;
     }
 
-    public Date getFechaContratacion() {
+    public LocalDate getFechaContratacion() {
         return fechaContratacion;
     }
 
-    public void setFechaContratacion(Date fechaContratacion) {
+    public void setFechaContratacion(LocalDate fechaContratacion) {
         this.fechaContratacion = fechaContratacion;
     }
 
-
-    public HashMap<Integer, RegistroLaboral> getHistorico() {
-        return historico;
+    public HashMap<Integer, RegistroLaboral> getHistorialLaboral() {
+        return historialLaboral;
     }
 
-    public void agregarEntradaRegistro (RegistroLaboral r) {
-        historico.put(contHist, r);
-        contHist++;
+    public void agregarSeccionesHistorial (RegistroLaboral rl) {
+        historialLaboral.put(contadorHistorial, rl);
+        contadorHistorial++;
     }
-
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("Empleado{");
-        sb.append("salarioMensual=").append(salarioMensual);
-        sb.append(", seccion=").append(seccion);
-        sb.append(", fechaCont=").append(fechaContratacion);
-        sb.append(", historico=").append(historico);
-        sb.append(", contHist=").append(contHist);
-        sb.append('}');
-        return sb.toString();
-    }
-
-    /**
-    @Override
-    public String toString2() {
-        return "Empleado{" +
-                "salarioMensual=" + salarioMensual +
-                ", seccion=" + seccion +
-                ", fechaContratacion=" + fechaContratacion +
-                ", historico=" + historico +
-                ", contHist=" + contHist +
-                '}';
-    }
-    */
 }

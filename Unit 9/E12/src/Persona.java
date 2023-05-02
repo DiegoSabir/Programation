@@ -1,13 +1,13 @@
-public class Persona {
+public abstract class Persona {
     private String dni;
     private String nombre;
     private int edad;
     private String direccion;
 
     public Persona() {
-        this.dni = "DefectDNI";
-        this.nombre = "DefectName";
-        this.edad = 18;
+        this.dni = "DefectDni";
+        this.nombre = "DefectNombre";
+        this.edad = 0;
         this.direccion = "DefectDireccion";
     }
 
@@ -49,4 +49,6 @@ public class Persona {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
+
+    public abstract double costeAnual();
 }

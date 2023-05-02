@@ -3,8 +3,8 @@ public class Seccion {
     private String nombreSeccion;
 
     public Seccion() {
-        this.idSeccion = -1;
-        this.nombreSeccion = "";
+        this.idSeccion = 1;
+        this.nombreSeccion = "DefectNombreSeccion";
     }
 
     public Seccion(int idSeccion, String nombreSeccion) {

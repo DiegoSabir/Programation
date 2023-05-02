@@ -1,37 +1,43 @@
-import java.util.Date;
+import java.time.LocalDate;
 
 public class RegistroLaboral {
-    private Seccion seccion;
-    private Date fechaInicio;
-    private Date fechaFin;
+    private Seccion seccionAsignada;
+    private LocalDate fechaInicio;
+    private LocalDate fechaFin;
 
-    public RegistroLaboral(Seccion seccion, Date fechaInicio, Date fechaFin) {
-        this.seccion = seccion;
+    public RegistroLaboral() {
+        this.seccionAsignada = new Seccion();
+        this.fechaInicio = LocalDate.of(2023,1,1);
+        this.fechaFin = LocalDate.of(2023,1,2);;
+    }
+
+    public RegistroLaboral(Seccion seccionAsignada, LocalDate fechaInicio, LocalDate fechaFin) {
+        this.seccionAsignada = seccionAsignada;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
     }
 
-    public Seccion getSeccion() {
-        return seccion;
+    public Seccion getSeccionAsignada() {
+        return seccionAsignada;
     }
 
-    public void setSeccion(Seccion seccion) {
-        this.seccion = seccion;
+    public void setSeccionAsignada(Seccion seccionAsignada) {
+        this.seccionAsignada = seccionAsignada;
     }
 
-    public Date getFechaInicio() {
+    public LocalDate getFechaInicio() {
         return fechaInicio;
     }
 
-    public void setFechaInicio(Date fechaInicio) {
+    public void setFechaInicio(LocalDate fechaInicio) {
         this.fechaInicio = fechaInicio;
     }
 
-    public Date getFechaFin() {
+    public LocalDate getFechaFin() {
         return fechaFin;
     }
 
-    public void setFechaFin(Date fechaFin) {
+    public void setFechaFin(LocalDate fechaFin) {
         this.fechaFin = fechaFin;
     }
 }

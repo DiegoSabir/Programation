@@ -1,25 +1,30 @@
 public class Area {
-    private int areaId;
-    private String areaName;
+    private int idArea;
+    private String nombreArea;
 
-    public Area(int areaId, String areaName) {
-        this.areaId = areaId;
-        this.areaName = areaName;
+    public Area() {
+        this.idArea = 0;
+        this.nombreArea = "DefectoNombreArea";
     }
 
-    public int getAreaId() {
-        return areaId;
+    public Area(int idArea, String nombreArea) {
+        this.idArea = idArea;
+        this.nombreArea = nombreArea;
     }
 
-    public void setAreaId(int areaId) {
-        this.areaId = areaId;
+    public int getIdArea() {
+        return idArea;
     }
 
-    public String getAreaName() {
-        return areaName;
+    public void setIdArea(int idArea) {
+        this.idArea = idArea;
     }
 
-    public void setAreaName(String areaName) {
-        this.areaName = areaName;
+    public String getNombreArea() {
+        return nombreArea;
+    }
+
+    public void setNombreArea(String nombreArea) {
+        this.nombreArea = nombreArea;
     }
 }
