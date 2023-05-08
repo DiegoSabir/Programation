@@ -2,8 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35aa7437-ffd5-41d4-b88c-d6b0d425d961" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../E01/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../E02/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E02/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E02/src/DivisionZeroException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E02/src/IncorrectDataException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E04/src/IncorrectDataException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E04/src/IncorrectPositionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E05/src/Area.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E05/src/AreaExcepcion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E05/src/DNIExcepcion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E05/src/EdadExcepcion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E05/src/FechaIngresoExcepcion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E05/src/HistorialMedico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E05/src/Paciente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E05/src/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E05/src/Trabajador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../E02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E02/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../E02/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../E04/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E04/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../E04/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E05/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../E05/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 9/E12/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 9/E12/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +32,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2PHEpyAG65g10goPd0wgNuFrVmp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -22,7 +45,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/diego/Documents/GitHub/Programation/Unit 10/E04"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
