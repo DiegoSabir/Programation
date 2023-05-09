@@ -1,3 +1,2 @@
 PlayStation 5 = $549.99
 Xbox One = $771.26
-Switch = $299.0

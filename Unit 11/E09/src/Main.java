@@ -18,7 +18,7 @@ public class Main {
         double[] prices = {549.99, 771.26, 299.00};
 
         try {
-            BufferedWriter file = new BufferedWriter(new FileWriter("C:\\Users\\diego\\Documents\\GitHub\\Programation\\Unit 11\\E09\\gameConsoles.txt"));
+            BufferedWriter file = new BufferedWriter(new FileWriter("C:\\Users\\a18diegorg\\Documents\\GitHub\\Programation\\Unit 11\\E09\\gameConsoles.txt"));
             for (int i = 0; i < products.length; i++) {
                 file.write(products[i] + " = $" + prices[i]);
                 file.newLine();
@@ -33,31 +33,37 @@ public class Main {
 
     public void showProducts(){
         Scanner sc = new Scanner(System.in);
-        File readFile = new File("C:\\Users\\diego\\Documents\\GitHub\\Programation\\Unit 11\\E09\\gameConsoles.txt");
+        File readFile = new File("C:\\Users\\a18diegorg\\Documents\\GitHub\\Programation\\Unit 11\\E09\\gameConsoles.txt");
+        File temporalFile = new File("C:\\Users\\a18diegorg\\Documents\\GitHub\\Programation\\Unit 11\\E09\\gameConsolesTemporal.txt");
 
         System.out.println("Introduce product name: ");
         String product = sc.next();
-        String readingLine;
 
         try {
             BufferedReader reading = new BufferedReader(new FileReader(readFile));
-            do {
-                readingLine = reading.readLine();
-                if (readingLine.contains(product)){
+            BufferedWriter writing = new BufferedWriter(new FileWriter(temporalFile));
+            String readingLine;
+
+            while((readingLine = reading.readLine()) != null){
+                if (readingLine.contains(product)) {
                     System.out.println(readingLine);
                 }
+                else{
+                    writing.write(readingLine + '\n');
+                }
             }
-            while (readingLine != null);
             reading.close();
+            writing.close();
+
+            if (readFile.delete()){
+                temporalFile.renameTo(readFile);
+            }
+            else {
+                System.out.println("ERROR");
+            }
         }
         catch (IOException e){
             e.printStackTrace();
         }
-
-    }
-
-
-    public void deleteProducts(){
-
     }
 }
