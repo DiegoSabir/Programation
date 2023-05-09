@@ -1,0 +1,7 @@
+File
+	String getAbsolutePath()
+	String getPath()
+	String getCanonicalPath()
+	Boolean exists()
+	String [] list()
+	Boolean isDirectory()
