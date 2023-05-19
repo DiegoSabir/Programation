@@ -1,6 +1,3 @@
-import java.io.*;
-import java.util.Scanner;
-
 /**
  * Se desea implementar un programa para gestionar la información de los alumnos de un
  * colegio. Entre los datos a almacenar de cada alumno está el nombre, apellidos y edad.
@@ -11,176 +8,217 @@ import java.util.Scanner;
  * - La aplicación deberá permitir obtener un listado de los alumnos, en el orden en el
  *   que fueron dados de alta.
  */
+import java.io.*;
+import java.util.Scanner;
+
 public class Main {
-    static Scanner teclado = new Scanner(System.in);
-    static File fic = new File("Alumnos.txt");
+    static Scanner sc = new Scanner(System.in);
+    static File file = new File("StudentsData.txt");
+    static FileOutputStream fos;
+    static ObjectOutputStream studentsList;
+
+    static {
+        try {
+            fos = new FileOutputStream(file, true);
+            studentsList = new ObjectOutputStream(fos);
+        }
+        catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public static void main(String[] args) {
-            int opcion;
+        int option;
+        try {
             do {
-                opcion = menu();
-                switch (opcion) {
+                option = menu();
+                switch (option) {
                     case 1:
-                        anhadirAlumno();
+                        addStudents();
                         break;
                     case 2:
-                        listarAlumnos();
+                        listStudents();
                         break;
                     case 3:
-                        consultarDatosAlumno();
+                        consultDataStudent();
                         break;
                     case 4:
-                        modificarAlumno();
+                        modifyStudent();
                         break;
                     case 5:
-                        eliminarAlumno();
+                        removeStudent();
+                        break;
+                    case 6:
+                        break;
+                    default:
+                        System.out.println("Introduce a right number");
                         break;
                 }
-            } while (opcion != 0);
+            }
+            while (option != 6);
+            studentsList.close();
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }
     }
 
     private static int menu() {
-        System.out.println("-- Registro --");
-        System.out.println("1-- Añadir alumnos");
-        System.out.println("2-- Listar alumnos");
-        System.out.println("3-- Consultar datos alumno");
-        System.out.println("4-- Modificar alumno");
-        System.out.println("5-- Eliminar alumno");
-        System.out.println("0-- Salir");
-        return Integer.parseInt(teclado.nextLine());
+        System.out.println("Choose a option: ");
+        System.out.println("[1] Add students");
+        System.out.println("[2] List students");
+        System.out.println("[3] Consult student data");
+        System.out.println("[4] Modify student");
+        System.out.println("[5] Remove student");
+        System.out.println("[6] Exit");
+
+        return Integer.parseInt(sc.nextLine());
     }
 
-    private static void anhadirAlumno() {
-        System.out.println("Introduzca nombre: ");
-        String name = teclado.nextLine();
-        System.out.println("Introduzca apellidos: ");
-        String surname = teclado.nextLine();
+    private static void addStudents() {
+        System.out.println("Introduce a name: ");
+        String name = sc.nextLine();
+        System.out.println("Introduce a surname: ");
+        String surname = sc.nextLine();
+        System.out.println("Introduce an age: ");
+        int age = sc.nextInt();
 
-        System.out.println("Introduzca edad: ");
-        int age = teclado.nextInt();
+        sc = new Scanner(System.in);
 
-        teclado = new Scanner(System.in);
-
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fic, true))) {
-            oos.writeObject(new Student(name, surname, age));
+        try {
+            studentsList.writeObject(new Student(name, surname, age));
         }
         catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
-    private static void consultarDatosAlumno() {
-        System.out.println("Introduzca la posición del elemento a consultar:");
-        int pos = teclado.nextInt();
-
-        teclado = new Scanner(System.in);
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fic))) {
-            int cont = 0;
-            while (ois.available() != 0) {
-                if (cont == pos) {
-                    Student student = (Student) ois.readObject();
-                    System.out.println(student.getName()+ " " + student.getSurname() + " " + student.getAge());
-                }
-                cont++;
-            }
-        }
-        catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private static void modificarAlumno() {
-        System.out.println("Introduzca la posición del elemento a modificar:");
-        int pos = teclado.nextInt();
-
-        teclado = new Scanner(System.in);
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fic));
-             ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fic))) {
-            int cont = 0;
-            while (ois.available() != 0) {
-                if (cont == pos) {
-                    Student a = (Student) ois.readObject();
-                    System.out.println("Nuevo nombre: ");
-                    a.setName(teclado.nextLine());
-                    System.out.println("Nuevos apellidos:");
-                    a.setSurname(teclado.nextLine());
-                    System.out.println("Nueva edad:");
-                    a.setAge(teclado.nextInt());
-                    teclado = new Scanner(System.in);
-                    System.out.println(a.getName()+ " " + a.getSurname() + " " + a.getAge());
-                    oos.writeObject(a);
-                }
-                cont++;
-            }
-        }
-        catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private static void eliminarAlumno() {
-        System.out.println("Introduzca la posición del elemento a eliminar:");
-        int pos = teclado.nextInt();
-        teclado = new Scanner(System.in);
-        File ficTemp = new File ("Temporal.txt");
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fic));
-             ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(ficTemp))) {
-            int cont = 0;
-            while (ois.available() != 0) {
+    private static void listStudents() {
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))){
+            int counter = 1;
+            while (true) {
                 Student student = (Student) ois.readObject();
-                if (cont != pos) {
+                System.out.println("ID: " + counter + "; " + student.getSurname() + ", " + student.getName() + "; " + student.getAge());
+                counter++;
+            }
+        }
+        catch (EOFException e) {
+            System.err.println("END FILE");
+        }
+        catch (IOException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private static void consultDataStudent() {
+        System.out.println("Introduce the student position:");
+        int position = sc.nextInt();
+        sc = new Scanner(System.in);
+
+        try (FileInputStream fis = new FileInputStream(file);
+             ObjectInputStream ois = new ObjectInputStream(fis)){
+            int counter = 1;
+            while (true) {
+                Student student = (Student) ois.readObject();
+                if (counter == position) {
+                    System.out.println("ID: " + counter + "; " + student.getSurname() + ", " + student.getName() + "; " + student.getAge());
+                }
+                counter++;
+            }
+        }
+        catch (EOFException e) {
+            System.err.println("END FILE");
+        }
+        catch (IOException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private static void modifyStudent() throws IOException {
+        System.out.println("Introduce the student position:");
+        int position = sc.nextInt();
+        sc = new Scanner(System.in);
+        File temporaryFile = File.createTempFile("Temporary", ".txt");
+
+        try (FileInputStream fis = new FileInputStream(file);
+             ObjectInputStream ois = new ObjectInputStream(fis);
+             FileOutputStream fos = new FileOutputStream(temporaryFile, true);
+             ObjectOutputStream oos = new ObjectOutputStream(fos)){
+
+            int counter = 1;
+
+            while (true) {
+                if (counter == position) {
+                    Student student = (Student) ois.readObject();
+                    System.out.println("Name edit: ");
+                    student.setName(sc.nextLine());
+                    System.out.println("Surname edit:");
+                    student.setSurname(sc.nextLine());
+                    System.out.println("Age edit:");
+                    student.setAge(sc.nextInt());
+                    sc = new Scanner(System.in);
+                    System.out.println(student.getSurname() + ", " + student.getName() + "; " + student.getAge());
+                    oos.writeObject(student);
+                }
+                else{
+                    oos.writeObject(ois.readObject());
+                }
+                counter++;
+            }
+        }
+        catch (EOFException e) {
+            System.err.println("END FILE");
+        }
+        catch (IOException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        volcadoFichero(temporaryFile);
+    }
+
+    private static void removeStudent() throws IOException {
+        System.out.println("Introduce the student position:");
+        int position = sc.nextInt();
+        sc = new Scanner(System.in);
+        File temporaryFile = File.createTempFile("Temporary", ".txt");
+
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file));
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(temporaryFile))){
+
+            int counter = 1;
+            while (true) {
+                Student student = (Student) ois.readObject();
+                if (counter != position) {
                     oos.writeObject(student);
                 }
                 else {
-                    System.out.println(student.getName()+ " " + student.getSurname() + " " + student.getAge());
-                    System.out.println("Elemento eliminado");
+                    System.out.println(student.getSurname() + ", " + student.getName() + "; " + student.getAge());
+                    System.out.println("STUDENT REMOVED");
                 }
-                cont++;
+                counter++;
             }
         }
-        catch (IOException e) {
+        catch (EOFException e) {
+            System.err.println("END FILE");
+        }
+        catch (IOException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
-        catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(ficTemp));
-             ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fic, true))){
-            while (ois.available() != 0) {
-                oos.writeObject(ois.readObject());
-            }
-            System.out.println((ficTemp.delete() ? "Fichero temporal eliminado" : "No se pudo eliminar fichero"));
-        }
-        catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-        catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
-        }
+        volcadoFichero(temporaryFile);
     }
 
-    private static void listarAlumnos() {
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fic))) {
-            while (ois.available() != 0) {
-                Student student = (Student) ois.readObject();
-                System.out.println(student.getName());
+    private static void volcadoFichero(File originFile) throws IOException {
+        try (FileInputStream fis = new FileInputStream(originFile);
+             ObjectInputStream ois = new ObjectInputStream(fis);
+             FileOutputStream fos = new FileOutputStream("StudentsData.txt");
+             ObjectOutputStream resSalida = new ObjectOutputStream(fos)) {
+            while (true) {
+                resSalida.writeObject(ois.readObject());
             }
         }
-        catch (IOException e) {
+        catch (EOFException e) {
+        }
+        catch (IOException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
-        catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-       }
     }
 }

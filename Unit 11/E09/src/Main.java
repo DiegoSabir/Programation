@@ -7,23 +7,44 @@ import java.util.Scanner;
  * pantalla (nombre y precio)
  */
 public class Main {
-    public static void main(String[] args) {
-        Main ej1 = new Main();
-        ej1.createFile();
-        ej1.showProducts();
+    static Scanner sc = new Scanner(System.in);
+    public void main(String[] args) {
+        int option;
+        do {
+            option = menu();
+            switch (option) {
+                case 1:
+                    createFile();
+                    break;
+                case 2:
+                    showProducts();
+                    break;
+                case 3:
+                    break;
+                default:
+                    System.out.println("Introduce a right option");
+            }
+        } while (option != 3);
     }
 
-    public void createFile(){
+    private static int menu() {
+        System.out.println("Choose a option: ");
+        System.out.println("[1] Create file");
+        System.out.println("[2] Show product and remove");
+        System.out.println("[3] Exit");
+
+        return Integer.parseInt(sc.nextLine());
+    }
+
+    private void createFile(){
         String[] products = {"PlayStation 5", "Xbox One", "Switch"};
         double[] prices = {549.99, 771.26, 299.00};
 
-        try {
-            BufferedWriter file = new BufferedWriter(new FileWriter("C:\\Users\\a18diegorg\\Documents\\GitHub\\Programation\\Unit 11\\E09\\gameConsoles.txt"));
+        try (BufferedWriter file = new BufferedWriter(new FileWriter("gameConsoles.txt"))){
             for (int i = 0; i < products.length; i++) {
                 file.write(products[i] + " = $" + prices[i]);
                 file.newLine();
             }
-            file.close();
             System.out.println("Data saved to file");
         }
         catch (IOException e) {
@@ -31,17 +52,16 @@ public class Main {
         }
     }
 
-    public void showProducts(){
+    private void showProducts(){
         Scanner sc = new Scanner(System.in);
-        File readFile = new File("C:\\Users\\a18diegorg\\Documents\\GitHub\\Programation\\Unit 11\\E09\\gameConsoles.txt");
-        File temporalFile = new File("C:\\Users\\a18diegorg\\Documents\\GitHub\\Programation\\Unit 11\\E09\\gameConsolesTemporal.txt");
+        File readFile = new File("gameConsoles.txt");
+        File temporalFile = new File("gameConsolesTemporal.txt");
 
         System.out.println("Introduce product name: ");
         String product = sc.next();
 
-        try {
-            BufferedReader reading = new BufferedReader(new FileReader(readFile));
-            BufferedWriter writing = new BufferedWriter(new FileWriter(temporalFile));
+        try (BufferedReader reading = new BufferedReader(new FileReader(readFile));
+             BufferedWriter writing = new BufferedWriter(new FileWriter(temporalFile))){
             String readingLine;
 
             while((readingLine = reading.readLine()) != null){
@@ -52,8 +72,6 @@ public class Main {
                     writing.write(readingLine + '\n');
                 }
             }
-            reading.close();
-            writing.close();
 
             if (readFile.delete()){
                 temporalFile.renameTo(readFile);
