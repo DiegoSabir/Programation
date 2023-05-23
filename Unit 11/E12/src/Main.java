@@ -6,8 +6,8 @@ import java.io.*;
  */
 public class Main {
     public static void main(String[] args) {
-        File file1 = new File ("C:\\Users\\a18diegorg\\Documents\\GitHub\\Programation\\Unit 11\\E12\\data.txt");
-        File file2 = new File ("C:\\Users\\a18diegorg\\Documents\\GitHub\\Programation\\Unit 11\\E12\\dataUpperCase.txt");
+        File file1 = new File ("data.txt");
+        File file2 = new File ("dataUpperCase.txt");
 
         try {
             FileReader readingFile = new FileReader(file1);

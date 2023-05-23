@@ -5,3 +5,20 @@ File
 	Boolean exists()
 	String [] list()
 	Boolean isDirectory()
+
+---------------------------------------------------------
+-FileReader: se utiliza para leer datos de un archivo de texto
+-FileWriter: se utiliza para escribir datos de caracteres en un archivo.
+
+-BufferedReader: se utiliza para leer datos de un flujo de entrada de caracteres con un búfer interno para mejorar la eficiencia de la lectura.
+-BufferedWriter: se utiliza para escribir datos de caracteres en un flujo de salida de caracteres con un búfer interno para mejorar la eficiencia de la escritura.
+
+-DataInputStream:
+
+-FileInputStream: se utiliza para leer datos binarios (por ejemplo, imágenes, sonidos, archivos comprimidos) de un archivo en el sistema de archivos.
+-FileOutPutStream: se utiliza para escribir datos binarios en un archivo en el sistema de archivos.
+
+-ObjectInputStream: es una clase en Java que se utiliza para leer objetos de un archivo de entrada en el sistema de archivos.
+-ObjectOutputStream: es una clase en Java que se utiliza para leer objetos de un archivo de entrada en el sistema de archivos.
+
+La serialización es el proceso de convertir un objeto en una secuencia de bytes para que pueda ser almacenado en un archivo o transmitido a través de una red. La deserialización es el proceso inverso de convertir una secuencia de bytes en un objeto.

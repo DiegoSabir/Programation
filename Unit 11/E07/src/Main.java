@@ -11,13 +11,11 @@ public class Main {
     public static void main(String[] args) {
         String[] people = {"Diego", "Ivan", "Pablo", "Fran"};
 
-        try {
-            BufferedWriter file = new BufferedWriter(new FileWriter("C:\\Users\\diego\\Documents\\GitHub\\Programation\\Unit 11\\E07\\data.txt"));
+        try (BufferedWriter file = new BufferedWriter(new FileWriter("data.txt"))){
             for (String person : people){
                 file.write(person);
                 file.newLine();
             }
-            file.close();
         }
         catch (IOException e){
             e.printStackTrace();

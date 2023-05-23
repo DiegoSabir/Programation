@@ -13,13 +13,11 @@ public class Main {
         String[] products = {"PlayStation 5", "Xbox One", "Switch"};
         double[] price = {549.99, 771.26, 299.00};
 
-        try {
-            BufferedWriter file = new BufferedWriter(new FileWriter("C:\\Users\\diego\\Documents\\GitHub\\Programation\\Unit 11\\E08\\gameConsoles.txt"));
+        try (BufferedWriter file = new BufferedWriter(new FileWriter("gameConsoles.txt"))){
             for (int i = 0; i < products.length; i++) {
                 file.write(products[i] + " = $" + price[i]);
                 file.newLine();
             }
-            file.close();
             System.out.println("Data saved to file");
         }
         catch (IOException e) {

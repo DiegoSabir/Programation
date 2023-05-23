@@ -1,0 +1,8 @@
+RuntimeException --> Excepciones por factores internos.
+	ArithmeticException -->
+
+
+IOException	--> Excepciones por factores externos.
+	EOFException -->
+	FileNotFoundException -->
+	
