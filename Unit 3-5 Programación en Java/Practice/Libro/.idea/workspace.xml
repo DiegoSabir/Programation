@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f968e8cd-6aa6-49a4-8224-2f062b970008" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exam.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exercises/Ordinograms/00_AreaTriangulo.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exercises/Ordinograms/01_DividirMayorMenor.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exercises/Ordinograms/02_ObtenerMayorDe3.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exercises/Ordinograms/03_ComprobarFecha.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exercises/Ordinograms/04_sumaEnteros.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exercises/Ordinograms/05_NumMenor100.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exercises/Ordinograms/06_ContarPositivos.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exercises/Ordinograms/07_CalcularFactorial.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exercises/Ordinograms/08_MostrarPares.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exercises/Ordinograms/09_ComprobarContraseña.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exercises/Ordinograms/10_MediaNotas.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exercises/Ordinograms/11_MediaSuma.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exercises/Ordinograms/12_TablasMultiplicar.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exercises/Ordinograms/13_AdivinarNumero.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exercises/Ordinograms/14_TratarNotas.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exercises/Ordinograms/15_NumPrimos.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exercises/Ordinograms/16_Nomina.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 1/Exercises/Ordinograms/act1_4.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 2/Practice/Intelli/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 2/Practice/Intelli/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 2/Practice/Intelli/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 2/Practice/Intelli/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 2/Practice/Intelli/Intelli.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 2/Practice/Intelli/src/E01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 2/Practice/Intelli/src/E02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 2/Practice/Intelli/src/E03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 2/Practice/Intelli/src/E04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Unit 2/Practice/Intelli/src/E05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/Book.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E00_TriangleArea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E01_HigherLowerDivision.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E02_GetHigherThanThree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E03_Dates.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E04_AdditionIntegers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E05_LessThanTen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E06_CountPositives.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E07_Factorial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E08_ShowEvenNumbers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E09_CheckPassword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E10_AverageGrade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E11_AverageAdditionNumbers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E12_MultiplicationTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E13_GuessNumbers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E14_ShowGrades.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E15_PrimeNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E16_Paycheck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E17_EvenOdd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E18_MultiplesThree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E19_HigherLower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E20_EvenOddRange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E21_SecondsHours.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E22_CalculateSalary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/out/production/Book/E23_PlusDigits.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E00_TriangleArea.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E01_HigherLowerDivision.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E02_GetHigherThanThree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E03_Dates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E04_AdditionIntegers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E05_LessThanTen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E06_CountPositives.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E07_Factorial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E08_ShowEvenNumbers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E09_CheckPassword.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E10_AverageGrade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E11_AverageAdditionNumbers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E12_MultiplicationTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E13_GuessNumbers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E14_ShowGrades.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E15_PrimeNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E16_Paycheck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E17_EvenOdd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E18_MultiplesThree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E19_HigherLower.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E20_EvenOddRange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E21_SecondsHours.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E22_CalculateSalary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Book/src/E23_PlusDigits.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FirstExerciseBulletin/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FirstExerciseBulletin/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FirstExerciseBulletin/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FirstExerciseBulletin/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FirstExerciseBulletin/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FirstExerciseBulletin/FirstExerciseBulletin.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FirstExerciseBulletin/out/production/FirstExerciseBulletin/E05_Letters.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FirstExerciseBulletin/out/production/FirstExerciseBulletin/E06_Money.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FirstExerciseBulletin/src/E05_Letters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FirstExerciseBulletin/src/E06_Money.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FirstExerciseBulletin/src/E07_ArmstrongNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FirstExerciseBulletin/src/E08_LuckyNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SecondExerciseBulletin/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SecondExerciseBulletin/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SecondExerciseBulletin/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SecondExerciseBulletin/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SecondExerciseBulletin/SecondExerciseBulletin.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SecondExerciseBulletin/src/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HlkD2LZd9l05VIZnGdSzb06NKm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Diego/Documents/GitHub/Programation/Unit 3-5/Practice/Libro"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f968e8cd-6aa6-49a4-8224-2f062b970008" name="Changes" comment="" />
+      <created>1668866957467</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668866957467</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
