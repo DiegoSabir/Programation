@@ -16,7 +16,7 @@ public class E03_Dates {
             System.out.println("Day error");
         }
         else if (m == 2 && d > 28){
-            System.out.println("Februay don´t have that day");
+            System.out.println("Februay doesn´t have that day");
         }
         else{
             switch (m){

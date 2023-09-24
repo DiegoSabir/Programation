@@ -9,6 +9,7 @@ public class E06_CountPositives {
 
         int positive = 0;
         int number;
+
         for (int i=0; i < 10; i++){
             System.out.println("Introduce a number:");
             number = sc.nextInt();
