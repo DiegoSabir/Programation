@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f689e859-133d-4fb8-aa37-5a84433cf1c7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Unit 3-5 Programación en Java/Practice/Libro/src/E03_Dates.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit 3-5 Programación en Java/Practice/Libro/src/E03_Dates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unit 3-5 Programación en Java/Practice/Libro/src/E06_CountPositives.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit 3-5 Programación en Java/Practice/Libro/src/E06_CountPositives.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unit 3-5 Programación en Java/Practice/Libro/src/E11_AverageAdditionNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit 3-5 Programación en Java/Practice/Libro/src/E11_AverageAdditionNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unit 9 Colecciones y tipos abstractos de datos/E12/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit 9 Colecciones y tipos abstractos de datos/E12/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unit 9 Colecciones y tipos abstractos de datos/E12/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Unit 9 Colecciones y tipos abstractos de datos/E12/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +13,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2ShVtUxf2m1BGRQxvYuduqHta6Z" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,6 +23,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/diego/OneDrive/Documentos/GitHub/Programation/Unit 8 Estructuras de almacenamiento"
