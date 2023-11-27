@@ -2,38 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="084773d3-8ad9-4dd5-add2-84613e094d62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Unit 10/E02/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Unit 10/E02/src/DivisionZeroException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Unit 10/E02/src/IncorrectDataException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Unit 10/E04/src/IncorrectDataException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Unit 10/E04/src/IncorrectPositionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Unit 10/E05/src/Area.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Unit 10/E05/src/AreaExcepcion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Unit 10/E05/src/DNIExcepcion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Unit 10/E05/src/EdadExcepcion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Unit 10/E05/src/FechaIngresoExcepcion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Unit 10/E05/src/HistorialMedico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Unit 10/E05/src/Paciente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Unit 10/E05/src/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Unit 10/E05/src/Trabajador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unit 10/E02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 10/E02/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unit 10/E02/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 10/E02/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unit 10/E03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 10/E03/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unit 10/E03/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 10/E03/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unit 10/E04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 10/E04/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unit 10/E04/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 10/E04/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unit 10/E05/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 10/E05/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../E01/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../E01/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../E03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../E03/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../E03/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../E03/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../E04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../E04/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../E04/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../E04/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../E05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../E05/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../E05/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../E05/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../E06/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../E06/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unit 9/E12/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 9/E12/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E00.2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../E00.2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E00.3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../E00.3/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E00/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../E00/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../E01/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +19,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
   <component name="ProjectId" id="2PHFxIoibCt74qkV093ov8teQdu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -56,7 +32,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/diego/Documents/GitHub/Programation/Unit 11/E03"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/a18diegorg/Documents/GitHub/Programation/Unit 11 Lectura y escritura de información/E04"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e86f3f5-6bf6-4a91-b525-79bc4a9c2f30" name="Changes" comment="" />
+    <list default="true" id="5e86f3f5-6bf6-4a91-b525-79bc4a9c2f30" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E00.2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E00.2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E00.3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E00.3/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E00/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E00/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E01/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E02/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E02/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E04/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E04/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E04/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E05/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E05/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E05/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E06/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E06/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E06/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E07/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E07/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E08/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E08/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E09/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E09/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E10/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E10/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E11/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E11/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E12/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E12/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E13/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unit 11 Lectura y escritura de información/E13/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E08/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../E08/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E09/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../E09/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E10/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../E10/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E11/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../E11/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +47,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="2OSi8qupl8YBjebrHlwathc11m8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -34,7 +61,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/diego/OneDrive/Documentos/GitHub/Programation/Unit 3-5 Programación en Java/Practice/Libro/src/E00_TriangleArea.java"
+    "last_opened_file_path": "C:/Users/a18diegorg/Documents/GitHub/Programation/Unit 9 Colecciones y tipos abstractos de datos/E12"
   }
 }]]></component>
   <component name="RunManager">
